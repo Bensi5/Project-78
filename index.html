@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title> Project 78 </title>
+</head>
+
+<body>
+   
+   
+        <center>
+        <h1> The Family Book</h1>
+        <img id="photo"onclick="nextimage()"
+        src="familybook.png">
+        <div>
+            <br>
+        <button onclick="nextimage()"> next</button>
+        </div>
+        <br>
+        <div id="name" >
+            <h1> My family Book</h1>>
+            </div>
+            <script>
+              var Photoarray=["images.png","mom.png","me.png","sister.png"];
+              var namearray=["Jins","Cinimol","Bensitha","Aardhra"];
+              var i=0 ;
+              function nextimage(){
+                document.getElementById("photo").src=Photoarray[i] ;
+                document.getElementById("name").innerHTML=namearray[i];
+                i=i+1 ;
+                if(i>3){
+                    i=0 ;
+                }
+            }
+            </script>
+            </center>
+            </body>
+            </html>
